@@ -18,6 +18,18 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var sentence = `In your cart, you have "
+  var contents= ${itemName} at ${itemPrice}}`
+  var end = "."
+  if (cart.length===0 || cart === undefined)
+  return "Your shopping cart is empty."
+  
+  for (let i = 0; i < cart.length ; i++)
+  {
+  sentence = sentence + `${Object.cart[itemName]} at ${Object.cart[itemPrice]}}` + end
+  }
+  
+  return sentence
 }
 
 function total() {
@@ -25,7 +37,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+//cart.pop()
 }
 
 function placeOrder(cardNumber) {
